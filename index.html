@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tere hi game mein baitha hoon</title>
+    <script src="script.js" defer></script>
+    <style>
+      .parent-div {
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 4px;
+        width: 200px;
+        height: 100px;
+        background-color: grey;
+        animation: shimmer 1s linear infinite;
+        background-size: 400%;
+        background-image: linear-gradient(
+          to right,
+          #f2f2f2 0%,
+          #f2f2f2 30%,
+          #d9d9d9 45%,
+          #d9d9d9 50%,
+          #f2f2f2 60%,
+          #f2f2f2 100%
+        );
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: 100%;
+        }
+        100% {
+          background-position: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-div"></div>
+  </body>
+</html>
