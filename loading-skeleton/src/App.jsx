@@ -1,9 +1,17 @@
+import Skeleton from "../skeleton/Skeleton";
 function App() {
   return (
-    <div>
-      I am App component
+    <div
+      style={{
+        borderRadius: "12px",
+        display: "flex",
+        gap: "10px",
+        flexDirection: "column",
+      }}
+    >
+      <Skeleton />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
